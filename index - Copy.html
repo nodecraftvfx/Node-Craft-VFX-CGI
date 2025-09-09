@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Craft VFX and CGI - Where Imagination Meets Reality</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cinematic Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="loading-text">NODE CRAFT</span>
+                <div class="loading-particles"></div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <span class="brand-main">NODE CRAFT</span>
+                <span class="brand-sub">VFX & CGI</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li><a href="#showreel" class="nav-link" data-text="Showreel">Showreel</a></li>
+                <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
+                <li><a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a></li>
+                <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Particle Background -->
+    <div class="particle-background" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-image" style="background-image: url('file:///C:/Users/New/Downloads/the-night-manager-villa.webp')"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                                   </div>
+                <h1 class="hero-title">
+                    <span class="title-line" data-text="NODE CRAFT">NODE CRAFT</span>
+                    <span class="title-line subtitle" data-text="VFX & CGI">VFX & CGI</span>
+                </h1>
+                <p class="hero-tagline">Where Imagination Meets Reality</p>
+                <p class="hero-description">Award-winning visual effects studio delivering cinematic excellence for film, television, and digital media. We collaborate with visionary filmmakers to bring impossible stories to life.</p>
+                <div class="hero-actions">
+                    <button class="btn btn--primary hero-cta" data-target="showreel">
+                        <span>View Showreel</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="btn btn--outline" data-target="contact">
+                        <span>Start Project</span>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Global Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="showreel">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cinematic Excellence</h2>
+                <p class="section-subtitle">Experience our latest work in visual effects and CGI</p>
+            </div>
+            <div class="showreel-grid">
+                <div class="showreel-main">
+                    <div class="video-container">
+                        <div class="video-backdrop" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1756097210/pplx_project_search_images/d3b8c1256c92709078c1feadc5fe46079ed71800.png')"></div>
+                        <div class="video-overlay"></div>
+                        <button class="play-button" id="playButton">
+                            <div class="play-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                            <div class="play-ripple"></div>
+                        </button>
+                        <div class="video-info">
+                            <h3>2024 Showreel</h3>
+                            <p>4K • 02:47</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showreel-sidebar">
+                    <div class="project-categories">
+                        <div class="category-item active" data-category="all">
+                            <span>All Projects</span>
+                            <span class="category-count">24</span>
+                        </div>
+                        <div class="category-item" data-category="film">
+                            <span>Film</span>
+                            <span class="category-count">8</span>
+                        </div>
+                        <div class="category-item" data-category="tv">
+                            <span>Television</span>
+                            <span class="category-count">6</span>
+                        </div>
+                        <div class="category-item" data-category="commercial">
+                            <span>Commercial</span>
+                            <span class="category-count">7</span>
+                        </div>
+                        <div class="category-item" data-category="gaming">
+                            <span>Gaming</span>
+                            <span class="category-count">3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive VFX solutions for every project</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="compositing">
+                    <div class="icon">📐</div>
+                    <h3>VFX Compositing</h3>
+                    <p>Green screen keying, rotoscoping, paint & cleanup, wire removal, and seamless compositing using industry-standard tools like Nuke.</p>
+                </div>
+                <div class="service-card" data-service="environments">
+                    <div class="icon">🎬</div>
+                    <h3>CGI Production</h3>
+                    <p>3D modeling, texturing, lighting, animation, and rendering. Complete CGI solutions from concept to final output.</p>
+                </div>
+                <div class="service-card" data-service="characters">
+                    <div class="icon">⚡</div>
+                    <h3>Motion Graphics</h3>
+                    <p>Dynamic motion graphics, title sequences, and visual effects for commercials and digital content.</p>
+                </div>
+                <div class="service-card" data-service="grading">
+                    <div class="icon">📽️</div>
+                    <h3>Post-Production</h3>
+                    <p>Color grading, finishing, and complete post-production pipeline management for your projects.</p>
+                </div>
+                <div class="service-card" data-service="virtual">
+                    <div class="icon">💻</div>
+                    <h3>Python Scripting</h3>
+                    <p>Custom pipeline development and automation solutions to streamline your VFX workflow.</p>
+                </div>
+                <div class="service-card" data-service="particles">
+                    <div class="icon">📱</div>
+                    <h3>Content Creation</h3>
+                    <p>Social media content, Instagram reels, and digital marketing visuals with professional VFX touch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing our finest work across film, TV, and digital media</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="film">Film</button>
+                <button class="filter-btn" data-filter="television">TV</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="film">
+                    <div class="portfolio-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1756097209/pplx_project_search_images/55d25ba05597956c66b9994d686166a476f3adc0.png')"></div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Epic Fantasy Feature</h3>
+                            <p>Major Studio • 2024</p>
+                            <span class="portfolio-category">Film</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="television">
+                    <div class="portfolio-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1754684684/pplx_project_search_images/7145bb680d7f6f491442e72c0a59e93aa48cac17.png')"></div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Sci-Fi Series</h3>
+                            <p>Streaming Platform • 2024</p>
+                            <span class="portfolio-category">Television</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1756097210/pplx_project_search_images/d3b8c1256c92709078c1feadc5fe46079ed71800.png')"></div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Luxury Brand Campaign</h3>
+                            <p>Premium Brand • 2024</p>
+                            <span class="portfolio-category">Commercial</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="gaming">
+                    <div class="portfolio-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1756097209/pplx_project_search_images/bf0c24e73b648f4bdfbb5b82101dbaa2ed9702bd.png')"></div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Gaming Cinematic</h3>
+                            <p>AAA Game Studio • 2023</p>
+                            <span class="portfolio-category">Gaming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Studio Excellence</h2>
+                        <p class="section-subtitle">Award-winning visual effects studio delivering cinematic excellence since 2020</p>
+                    </div>
+                    <div class="about-description">
+                        <p>Node Craft VFX and CGI stands at the forefront of visual storytelling, where cutting-edge technology meets unbounded creativity. Our team of world-class artists and technical directors brings decades of combined experience from Hollywood blockbusters to independent films.</p>
+                        <p>We collaborate with visionary filmmakers, pushing the boundaries of what's possible in visual effects while maintaining the highest standards of artistry and technical excellence.</p>
+                    </div>
+                    <div class="awards-section">
+                        <h3>Recognition</h3>
+                        <div class="awards-grid">
+                            <div class="award-item">
+                                <span class="award-icon">🏆</span>
+                                <span>VFX Society Award</span>
+                            </div>
+                            <div class="award-item">
+                                <span class="award-icon">📺</span>
+                                <span>Emmy Nomination</span>
+                            </div>
+                            <div class="award-item">
+                                <span class="award-icon">🎬</span>
+                                <span>Best Visual Effects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="team-showcase">
+                        <div class="team-member">
+                            <div class="team-role">Director of Visual Effects</div>
+                            <div class="team-experience">15+ years in feature films</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-role">Lead Compositor</div>
+                            <div class="team-experience">Expert in Nuke and advanced compositing</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-role">3D Supervisor</div>
+                            <div class="team-experience">Specialist in character and environment creation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h2 class="section-title">Start Your Project</h2>
+                        <p class="section-subtitle">Ready to bring your vision to life?</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hello@nodecraftvfx.com">hello@nodecraftvfx.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🌍</div>
+                            <div>
+                                <h4>Locations</h4>
+                                <p>Los Angeles, CA<br>Mumbai, India<br>London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Vimeo">
+                            <span>Vimeo</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+    <div class="form-row">
+        <div class="form-group">
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="firstName">First Name</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="lastName">Last Name</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email">Email Address</label>
+    </div>
+    <div class="form-group">
+        <input type="tel" id="phone" name="phone" required>
+        <label for="phone">Contact Number</label>
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="project-type">Project Type</label>
+        <select class="form-control" id="project-type" name="project-type" required>
+            <option value="">Select Project Type</option>
+            <option value="VFX Compositing">VFX Compositing</option>
+            <option value="CGI Production">CGI Production</option>
+            <option value="Motion Graphics">Motion Graphics</option>
+            <option value="Post Production">Post Production</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your vision..."></textarea>
+        <label for="message">Project Details</label>
+    </div>
+    <button type="button" class="btn btn--primary btn--full" id="sendMessageBtn">
+        <span>Send Message</span>
+        <div class="btn-glow"></div>
+    </button>
+</form>
+<script>
+document.getElementById("sendMessageBtn").addEventListener("click", function() {
+    // Collect form values
+    const firstName = document.getElementById("firstName").value.trim();
+    const lastName = document.getElementById("lastName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const projectType = document.getElementById("project-type").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Simple validation
+    if (!firstName || !lastName || !email || !phone || !projectType || !message) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    // Build WhatsApp message
+    const text =
+        `Name: ${firstName} ${lastName}\n` +
+        `Email: ${email}\n` +
+        `Contact Number: ${phone}\n` +
+        `Project Type: ${projectType}\n` +
+        `Details: ${message}`;
+    // Encode message for URL
+    const encodedText = encodeURIComponent(text);
+    // Open WhatsApp chat to +91 7990110392
+    window.open(`https://wa.me/917990110392?text=${encodedText}`, "_blank");
+});
+</script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>NODE CRAFT VFX & CGI</h3>
+                    <p>Where Imagination Meets Reality</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <a href="#services">VFX Compositing</a>
+                        <a href="#services">Digital Environments</a>
+                        <a href="#services">Character Animation</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Vimeo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Node Craft VFX and CGI. All rights reserved.</p>
+                <p>Crafting cinematic visuals since 2020</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
