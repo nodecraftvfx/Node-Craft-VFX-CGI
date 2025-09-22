@@ -311,6 +311,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: url('Screenshot 2025-08-25 111602.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 *,
@@ -2079,4 +2081,9 @@ section {
 .loading-screen.fade-out {
   opacity: 0;
   visibility: hidden;
+}
+
+body {
+    background: url('Screenshot 2025-08-25 111602.png') no-repeat center center fixed;
+    background-size: cover;
 }

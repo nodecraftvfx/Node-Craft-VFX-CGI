@@ -57,14 +57,18 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-image" style="background-image: url('file:///C:/Users/New/Downloads/the-night-manager-villa.webp')"></div>
-            <div class="hero-overlay"></div>
+        <div class="hero-bg" style="position:relative;overflow:hidden;">
+            <video autoplay muted loop playsinline id="bgVideo" style="width:100vw;height:100vh;object-fit:cover;position:absolute;top:0;left:0;z-index:0;">
+                    <source src="BG & Showreels/Final_Render/Shot_8_00000330.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay" style="position:absolute;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.55);z-index:1;"></div>
         </div>
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                                   </div>
+                   
+            </div>
                 <h1 class="hero-title">
                     <span class="title-line" data-text="NODE CRAFT">NODE CRAFT</span>
                     <span class="title-line subtitle" data-text="VFX & CGI">VFX & CGI</span>
@@ -101,7 +105,6 @@
             <div class="scroll-arrow"></div>
         </div>
     </section>
-
     <!-- Showreel Section -->
     <section id="showreel" class="showreel">
         <div class="container">
@@ -184,10 +187,10 @@
                     <h3>Post-Production</h3>
                     <p>Color grading, finishing, and complete post-production pipeline management for your projects.</p>
                 </div>
-                <div class="service-card" data-service="virtual">
-                    <div class="icon">💻</div>
-                    <h3>Python Scripting</h3>
-                    <p>Custom pipeline development and automation solutions to streamline your VFX workflow.</p>
+                        <div class="service-card" data-service="grading">
+                            <div class="icon">🎨</div>
+                            <h3>Color Grading</h3>
+                            <p>Professional color grading to enhance the visual impact and mood of your footage, ensuring cinematic quality for every project.</p>
                 </div>
                 <div class="service-card" data-service="particles">
                     <div class="icon">📱</div>
@@ -198,6 +201,50 @@
         </div>
     </section>
 
+    <!-- Work Recent Project Section -->
+    <section id="work-recent" class="work-recent">
+        <div class="container">
+            <h2 class="section-title" style="text-align:center; color:#00eaff; font-family:'Orbitron',sans-serif; font-size:2.5rem; margin-top:40px;">Work Recent Project</h2>
+            <p class="section-subtitle" style="text-align:center; color:#aaa; font-size:1.2rem; margin-bottom:40px;">Showcasing our latest work in visual effects and CGI</p>
+            <div class="recent-projects-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px;">
+                <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                    <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/Ulajh_Poster.jpg" alt="Uljah" style="width:100%;border-radius:8px;">
+                    <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">Uljah</h3>
+                    <p style="color:#ccc;text-align:center;font-size:1rem;">Junglee Pictures • 2nd August</p>
+                </div>
+                <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                    <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/Bastar-The_Naxal_Story_film_poster.jpg" alt="Bastar The Naxal Story" style="width:100%;border-radius:8px;">
+                    <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">Bastar: The Naxal Story</h3>
+                    <p style="color:#ccc;text-align:center;font-size:1rem;">Sunshine Pictures • 15th March</p>
+                </div>
+                <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                    <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/MV5BMjdiYWQxMWEtOGM3Yy00MWNjLWIwOGUtNWNlNzc2NzIwNTdmXkEyXkFqcGc@._V1_.jpg" alt="Aakhri Sach" style="width:100%;border-radius:8px;">
+                    <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">Aakhri Sach</h3>
+                    <p style="color:#ccc;text-align:center;font-size:1rem;">Disney+ Hotstar • Official Trailer</p>
+                </div>
+                <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                    <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/p29167343_v_v8_ab.jpg" alt="The Mehta Boys" style="width:100%;border-radius:8px;">
+                    <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">The Mehta Boys</h3>
+                    <p style="color:#ccc;text-align:center;font-size:1rem;">Feature Film</p>
+                </div>
+                <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                    <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/charlie%20chopra.jpg" alt="Charlie Chopra" style="width:100%;border-radius:8px;">
+                    <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">Charlie Chopra</h3>
+                    <p style="color:#ccc;text-align:center;font-size:1rem;">Sony LIV Originals • Streaming Now</p>
+                </div>
+                <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                    <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/The_Night_Manager_(Indian_TV_series).jpg" alt="The Night Manager" style="width:100%;border-radius:8px;">
+                    <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">The Night Manager</h3>
+                    <p style="color:#ccc;text-align:center;font-size:1rem;">Disney+ Hotstar • Feb 17</p>
+                </div>
+                    <div class="project-card" style="background:#181818;border-radius:10px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,0.3);max-width:300px;">
+                        <img src="file:///D:/Node%20Craft%20_VFX_CGI/Website/BG%20&%20Showreels/Image/Taaza_Khabar_season_2_poster.webp" alt="Taaza Khabar Season 2" style="width:100%;border-radius:8px;">
+                        <h3 style="color:#00eaff;text-align:center;margin:15px 0 5px 0;font-family:'Orbitron',sans-serif;">Taaza Khabar Season 2</h3>
+                        <p style="color:#ccc;text-align:center;font-size:1rem;">Disney+ Hotstar • Sept 27</p>
+                    </div>
+            </div>
+        </div>
+    </section>
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -263,49 +310,11 @@
             <div class="about-content">
                 <div class="about-text">
                     <div class="section-header">
-                        <h2 class="section-title">Studio Excellence</h2>
-                        <p class="section-subtitle">Award-winning visual effects studio delivering cinematic excellence since 2020</p>
+                        <h2 class="section-title">Work Recent Project </h2>
+                        <p class="section-subtitle">Showcasing our latest work in visual effects and CGI</p>
+                    
                     </div>
-                    <div class="about-description">
-                        <p>Node Craft VFX and CGI stands at the forefront of visual storytelling, where cutting-edge technology meets unbounded creativity. Our team of world-class artists and technical directors brings decades of combined experience from Hollywood blockbusters to independent films.</p>
-                        <p>We collaborate with visionary filmmakers, pushing the boundaries of what's possible in visual effects while maintaining the highest standards of artistry and technical excellence.</p>
-                    </div>
-                    <div class="awards-section">
-                        <h3>Recognition</h3>
-                        <div class="awards-grid">
-                            <div class="award-item">
-                                <span class="award-icon">🏆</span>
-                                <span>VFX Society Award</span>
-                            </div>
-                            <div class="award-item">
-                                <span class="award-icon">📺</span>
-                                <span>Emmy Nomination</span>
-                            </div>
-                            <div class="award-item">
-                                <span class="award-icon">🎬</span>
-                                <span>Best Visual Effects</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="team-showcase">
-                        <div class="team-member">
-                            <div class="team-role">Director of Visual Effects</div>
-                            <div class="team-experience">15+ years in feature films</div>
-                        </div>
-                        <div class="team-member">
-                            <div class="team-role">Lead Compositor</div>
-                            <div class="team-experience">Expert in Nuke and advanced compositing</div>
-                        </div>
-                        <div class="team-member">
-                            <div class="team-role">3D Supervisor</div>
-                            <div class="team-experience">Specialist in character and environment creation</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                   
     </section>
 
     <!-- Contact Section -->
@@ -322,21 +331,21 @@
                             <div class="contact-icon">📧</div>
                             <div>
                                 <h4>Email</h4>
-                                <a href="mailto:hello@nodecraftvfx.com">hello@nodecraftvfx.com</a>
+                                <a href="mailto:nodecraftvfx@gmail.com">nodecraftvfx@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📱</div>
                             <div>
                                 <h4>Phone</h4>
-                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                                <a href="tel:+15551234567">+91 7990110392</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🌍</div>
                             <div>
                                 <h4>Locations</h4>
-                                <p>Los Angeles, CA<br>Mumbai, India<br>London, UK</p>
+                                <p>Vadodara,<br>Gujrat, India<br>
                             </div>
                         </div>
                     </div>
@@ -373,15 +382,16 @@
         <label for="phone">Contact Number</label>
     </div>
     <div class="form-group">
-        <label class="form-label" for="project-type">Project Type</label>
         <select class="form-control" id="project-type" name="project-type" required>
             <option value="">Select Project Type</option>
             <option value="VFX Compositing">VFX Compositing</option>
             <option value="CGI Production">CGI Production</option>
             <option value="Motion Graphics">Motion Graphics</option>
             <option value="Post Production">Post Production</option>
+            
             <option value="Other">Other</option>
         </select>
+        <label class="form-label" for="project-type">Project Type</label>
     </div>
     <div class="form-group">
         <textarea id="message" name="message" rows="5" required placeholder="Tell us about your vision..."></textarea>
